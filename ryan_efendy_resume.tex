@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    % \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://ryanefendy.com/}{\Large Ryan Efendy}} & Email : \href{mailto:ryanefendy95@gmail.com}{ryanefendy95@gmail.com}\\
+  \href{https://ryanefendy.com/}{https://ryanefendy.com/} & Mobile : +1-267-307-3323 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Master of Science in Computer Science;  GPA: 4.00}{Jan. 2019 -- Present}
+    \resumeSubheading
+      {Drexel University}{Philadelphia, PA}
+      {Bachelor of Science in Computer Science;  GPA: 3.40}{Sept. 2013 -- Jun. 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Microsoft}{Redmond, WA}
+      {Software Engineer}{Jul. 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{}
+          {Upgraded and migrated more than \textbf{10} directives in AngularJS to Angular components}
+        \resumeItem{}
+          {Proposed and implemented a redesigned state container with NgRx with better predictability and performance in Angular application}
+        \resumeItem{}
+          {Performed daily performance, reliability, and failure monitoring tasks to ensure proper health of multiple services}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Product School}{Seattle, WA}
+      {Coding Boot Camp Instructor}{Sept. 2018 - Nov. 2018}
+      \resumeItemListStart
+        \resumeItem{}
+          {Taught \textbf{10+} students full-stack web development, cutting-edge technologies and best practices through lectures and building applications}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Amazon}{New York City, NY}
+      {Software Engineer}{Sept. 2017 - Dec. 2017}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed an automated End-to-End Testing framework for Jupyter Notebook using Nightwatch.js and Selenium}
+        \resumeItem{}
+          {Created a Python library and Node.js module to parse Docker configuration files to retrieve Amazon ECR Registries URI}
+        \resumeItem{}
+          {Configured AWS Batch’s job definition, compute environment, and job queue to encode files from csv to protobuf format}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {PayPal}{Scottsdale, AZ}
+      {Site Reliability Engineer}{Jun. 2017 - Sept. 2017}
+      \resumeItemListStart
+        \resumeItem{}
+          {Implemented form components to collect user input to be passed to a Node.js, Express and MongoDB backend to triage tickets based on priority level and make appropriate decisions}
+        \resumeItem{}
+          {Developed new features using React and Redux and built reusable components and front-end libraries for future use such as input components that are shared in more than \textbf{10} pages of the applications}
+        \resumeItem{}
+          {Refactored Grunt build tasks to decrease build times from \textbf{30} seconds to less than \textbf{5} seconds in a React, Node project by separating the tasks and enabled live reloading of updated files to the browser}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Oracle}{Conshohocken, PA}
+      {Applications Engineer}{Jun. 2016 - Jun. 2016}
+      \resumeItemListStart
+        \resumeItem{}
+          {Implemented multiple Quick Filters in more than 3 pages of Primavera Prime application to allow users quickly filter attributes to only see specific items, utilized internal JavaScript libraries and wrote QUnit tests with a testing coverage of over \textbf{90\%}}
+        \resumeItem{}
+          {Wrote \textbf{2000} lines of Qunit and \textbf{1000} lines of JUnit/integration testing code which increased testing coverage by \textbf{25\%} span across \textbf{10} different pages of Primavera Prime application}
+        \resumeItem{}
+          {Fixed \textbf{20+} bugs and defects of level \textbf{3} and \textbf{4} severity, medium priority and added test cases to prevent the bugs and defects from breaking again in the future}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {J.P. Morgan}{Wilmington, DE}
+      {Software Engineer}{Mar. 2016 - Jun. 2016}
+      \resumeItemListStart
+        \resumeItem{}
+          {Refactored \textbf{5+} VBA scripts to Python scripts to manipulate data following specifications and requirements using pandas and XlsxWriter}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Comcast}{Mount Laurel, NJ}
+      {Software Engineer}{Mar. 2015 - Sept. 2015}
+      \resumeItemListStart
+        \resumeItem{}
+          {Implemented Python scripts to send HTML-formatted email using Gmail’s SMTP service to \textbf{20+} clients}
+      \resumeItemListEnd
+
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{}
+      {\textbf{Lyft Offline (1st place Pennapps XIV: Best Use of Lyft API)}: Enable user to request a Lyft with NO Internet connection only through SMS}
+    \resumeSubItem{}
+      {\textbf{HarassBlocker Plus (1st place Medhacks 2.0: Hack Harassment)}: Content filtering service which uses IBM Watson and neural networks to detect harassing content}
+    \resumeSubItem{}
+      {\textbf{EmotiBoo (1st place DubHacks: Best Use of Data Visualization with Qualtrics)}: Aid people with social communication disorders by displaying the emotions of the speaker in a concise way}
+    \resumeSubItem{}
+      {\textbf{WorldChat (DragonHacks: Winner of Globo's  Challenge)}: Ask all your questions to real people and have them answered in real time in your own language}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
